@@ -334,3 +334,8 @@ codex exec \
 | 4.8 回归 | — | — (Golden Test via flutter test) | — | — |
 | 5 审查 | — | — | — | **exec read-only** |
 | 6 监控 | — | — | — | exec review |
+
+## Related skills
+
+- **`flutter-device-crud-testing`** — use as a higher-level workflow that orchestrates flutter-mcp-testing for systematic screen-by-screen validation.
+- **`flutter-verify`** — use after flutter-mcp-testing to confirm all integrations and regressions are resolved.

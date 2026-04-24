@@ -501,3 +501,8 @@ These skills should be triggered at appropriate steps:
 | `store-publishing-automation` | App Store / Google Play metadata |
 | `firebase-auth-manager` | If app needs authentication |
 | `firebase-appcheck-manager` | If app needs App Check |
+
+## Related skills
+
+- **`firebase-flutter-setup`** — use as an alternative if you only need Firebase setup without the full fullstack init (more lightweight).
+- **`flutter-verify`** — use after flutter-fullstack-init to validate all integrations are working.

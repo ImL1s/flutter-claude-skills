@@ -200,3 +200,7 @@ PressEscape
 ClickRel 0.93 0.03 "settings"      # Navigate to settings
 TakeScreenshot "04_settings"
 ```
+
+## Related skills
+
+- **`flutter-verify`** — use to verify Windows desktop UI behavior on real hardware after flutter-windows-ui-testing screenshots.

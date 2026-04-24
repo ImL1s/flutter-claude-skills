@@ -96,3 +96,7 @@ For precise positioning, use `GlobalKey` on each item and `Scrollable.ensureVisi
 - Always implement both `initState` and `didUpdateWidget` when the widget should react to prop changes.
 - Prefer `SingleChildScrollView` over `ListView` when the number of children is small and recycling is unnecessary.
 - Remove `LayoutBuilder` wrappers around `ScrollView` unless `constraints` are actively used.
+
+## Related skills
+
+- **`flutter-verify`** — use to verify viewport behavior on real devices and catch recycling-related regressions.

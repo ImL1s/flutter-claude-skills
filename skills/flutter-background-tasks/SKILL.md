@@ -376,3 +376,7 @@ test('foreground/background cache key consistency', () async {
 xcrun simctl background_fetch booted com.example.myapp
 # 4. Check console logs in Xcode
 ```
+
+## Related skills
+
+- **`flutter-verify`** — use to verify background tasks are executing correctly on real devices and checking for runtime errors.

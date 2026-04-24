@@ -178,3 +178,7 @@ From debugging session (2025-10-03):
 - All investigations completed concurrently
 - All fixes integrated successfully
 - Zero conflicts between agent changes
+
+## Related skills
+
+- **`subagent-driven-development`** — use when coordinating multiple agents to work on different areas of a codebase sequentially or iteratively, with state sharing between runs.

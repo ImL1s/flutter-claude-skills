@@ -211,3 +211,8 @@ Ready to implement auth feature
 **Pairs with:**
 - **finishing-a-development-branch** - REQUIRED for cleanup after work complete
 - **executing-plans** or **subagent-driven-development** - Work happens in this worktree
+
+## Related skills
+
+- **`brainstorming`** — use before using-git-worktrees to design the feature, then use this skill to set up the isolated workspace.
+- **`finishing-a-development-branch`** — use after completing work in the worktree to clean up and merge.

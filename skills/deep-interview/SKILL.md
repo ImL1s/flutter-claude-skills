@@ -647,4 +647,9 @@ Each mode is used exactly once, then normal Socratic questioning resumes. Modes 
 | 0.8 - 1.0 | Almost nothing known | Early stages, keep going |
 </Advanced>
 
+## Related skills
+
+- **`deep-dive`** — use to combine investigation (trace) with deep-interview in a single orchestrated flow when the root cause is unknown.
+- **`brainstorming`** — use when requirements are ambiguous and you need to explore alternatives before settling on a design.
+
 Task: {{ARGUMENTS}}

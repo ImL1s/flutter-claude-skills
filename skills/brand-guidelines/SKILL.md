@@ -71,3 +71,7 @@ To access Anthropic's official brand identity and style resources, use this skil
 - Uses RGB color values for precise brand matching
 - Applied via python-pptx's RGBColor class
 - Maintains color fidelity across different systems
+
+## Related skills
+
+See [What's inside](../../README.md#whats-inside) for related categories — brand-guidelines is a design-system tool without natural composition partners in other skill domains.

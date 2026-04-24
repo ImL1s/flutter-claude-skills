@@ -791,3 +791,8 @@ All Firebase packages must be on the same generation. Mixing versions causes dep
 | DeviceCheck fallback still fails after configuring provider | **Missing Apple DeviceCheck private key** in Firebase Console. Must create a key with DeviceCheck capability in Apple Developer Console → Keys, download .p8, and upload via REST API. ASC API keys do NOT have DeviceCheck capability. |
 | Entitlements file created but Xcode doesn't use it | Must add `CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements` to all Runner build configs in `project.pbxproj`. Use Python regex or `xcodeproj` gem — search for `PRODUCT_BUNDLE_IDENTIFIER = com.your.app;` as anchor point |
 | "App attestation failed" even though REST API configs exist | **App not registered in Firebase Console UI**. REST API `appAttestConfig`/`deviceCheckConfig` create configs but do NOT register the app. Must go to Firebase Console → App Check → 應用程式 → expand app → select provider → fill Team ID → Save. Requires `roles/editor` IAM role. |
+
+## Related skills
+
+- **`firebase-flutter-setup`** → **`firebase-appcheck-manager`** — complete Firebase setup before configuring App Check.
+- **`firebase-ai-logic`** — use alongside firebase-appcheck-manager for secure AI Logic deployments; AppCheck attestation protects backend API calls.

@@ -474,3 +474,8 @@ The execution bridge passes `spec_path` explicitly to downstream skills. autopil
 
 Deep-dive is an orchestrator — it does not replace `/trace` or `/deep-interview` as standalone skills.
 </Advanced>
+
+## Related skills
+
+- **`deep-interview`** — use after deep-dive investigation to crystallize findings into actionable requirements (or invoke directly if you already know the root cause).
+- **`systematic-debugging`** — use when the problem is a production crash or bug that needs reproducibility before investigation.

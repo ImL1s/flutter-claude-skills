@@ -610,3 +610,8 @@ Copy this for each project:
 15. **ChoiceChip testing** — When testing chip selection, verify BOTH:
     - The newly selected chip has selected styling
     - The previously selected chip lost its selected styling
+
+## Related skills
+
+- **`flutter-unit-testing`** — use for isolated widget unit tests without device hardware. flutter-device-crud-testing focuses on multi-device integration scenarios.
+- **`flutter-integration-testing`** — use for cross-module widget interactions on devices.

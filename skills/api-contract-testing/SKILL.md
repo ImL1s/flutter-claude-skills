@@ -339,3 +339,8 @@ List<Map<String, dynamic>> parseJsonp(String response) {
         ├── Step 4: @Tags(['integration']) 真實 API 測試 → Verification
         └── Step 5: fixture 快照 → Regression Guard
 ```
+
+## Related skills
+
+- **`integration-testing-dart`** — use for cross-module API contract validation. api-contract-testing focuses on third-party API verification; integration-testing-dart covers intra-app module contracts.
+- **`flutter-api-reverse-engineering`** — use alongside api-contract-testing when reverse-engineering native APIs via platform channels or native bindings.

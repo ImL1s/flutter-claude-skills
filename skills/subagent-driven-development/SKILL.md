@@ -187,3 +187,8 @@ Done!
 - **executing-plans** - Use for parallel session instead of same-session execution
 
 See code-reviewer template: requesting-code-review/code-reviewer.md
+
+## Related skills
+
+- **`writing-plans`** — use to create the plan that subagent-driven-development executes.
+- **`dispatching-parallel-agents`** — use for independent investigative work across multiple areas without requiring sequential review gates.

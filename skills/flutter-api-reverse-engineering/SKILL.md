@@ -340,3 +340,7 @@ Update architecture notes with:
 5. **Multiple TLS layers** — App → local proxy → server means two TLS hops
 6. **AES S-box fires during init** — Delay monitor activation to catch actual encryption
 7. **Per-session keys** — Keys change each app launch; capture and use in same session
+
+## Related skills
+
+- **`api-contract-testing`** — use after flutter-api-reverse-engineering to establish contracts for the reverse-engineered APIs and create integration tests.

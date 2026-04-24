@@ -304,3 +304,8 @@ if (kDebugMode && debugToken.isNotEmpty) {
 | 方案 | Spark（免費）/ Blaze（付費） |
 | Console URL | `https://console.firebase.google.com/project/<your-project-id>/ailogic` |
 
+## Related skills
+
+- **`firebase-flutter-setup`** → **`firebase-appcheck-manager`** — complete Firebase setup before configuring AI Logic. AppCheck attestation is required for production AI Logic deployments.
+- **`firebase-auth-manager`** — use alongside firebase-ai-logic for user-scoped AI features that require authentication.
+

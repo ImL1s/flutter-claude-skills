@@ -326,7 +326,7 @@ enum DeleteResult { success, partialSuccess, requiresReauth, failed }
 - If cloud cleanup fails, return `partialSuccess` (not `success`) for compliance transparency
 - Record failed cleanups to Crashlytics for server-side follow-up
 
-## Related Skills
+## Related skills
 
-- `firebase-auth-manager` — Enable/disable auth providers via CLI
-- `firebase-appcheck-manager` — App Check configuration
+- **`firebase-auth-manager`** — enable/disable auth providers via CLI.
+- **`firebase-appcheck-manager`** — use alongside flutter-social-login for securing authentication endpoints with App Check.

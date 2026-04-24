@@ -94,3 +94,8 @@ with sync_playwright() as p:
   - `element_discovery.py` - Discovering buttons, links, and inputs on a page
   - `static_html_automation.py` - Using file:// URLs for local HTML
   - `console_logging.py` - Capturing console logs during automation
+
+## Related skills
+
+- **`verify-ui`** — use after webapp-testing screenshot capture to compare actual output against reference designs.
+- **`visual-verdict`** — use for structured visual diff validation after taking screenshots via webapp-testing.

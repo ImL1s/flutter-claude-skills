@@ -29,3 +29,8 @@ description: Review all changed files, fix issues found, run tests, then commit.
 ## 注意事項
 - 不要只看最新的 commit，要看整個 branch 的所有變更
 - Review 時如果發現跨專案的檔案被改到，立刻停下來確認
+
+## Related skills
+
+- **`requesting-code-review`** — use after review-fix-commit to formally request review from a code-reviewer agent before merging.
+- **`finishing-a-development-branch`** — use after review-fix-commit to merge the branch with proper merge discipline.

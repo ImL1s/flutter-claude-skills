@@ -52,3 +52,9 @@ Start by understanding the current project context, then ask questions one at a 
 - **Explore alternatives** - Always propose 2-3 approaches before settling
 - **Incremental validation** - Present design in sections, validate each
 - **Be flexible** - Go back and clarify when something doesn't make sense
+
+## Related skills
+
+- **`deep-interview`** — use after brainstorming to crystallize ambiguous design questions before autonomous execution.
+- **`writing-plans`** — use to structure the validated design into an actionable implementation plan with phased milestones.
+- **`using-git-worktrees`** — when ready to implement the brainstormed design, use this to set up an isolated development branch.

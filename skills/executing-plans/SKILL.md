@@ -74,3 +74,8 @@ After all tasks complete and verified:
 - Reference skills when plan says to
 - Between batches: just report and wait
 - Stop when blocked, don't guess
+
+## Related skills
+
+- **`writing-plans`** — use to create the plan that executing-plans will follow.
+- **`verification-before-completion`** — use within executing-plans execution to validate each completion gate before proceeding.

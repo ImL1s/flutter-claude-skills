@@ -516,9 +516,9 @@ for frame in inventory:
 
 ---
 
-## 相關 skills
+## Related skills
 
-- `figma-playwright-fallback` — MCP 限額時快速切換的精簡版本（本 skill 的前身）
-- `verify-ui` — 抓完 Figma 後做視覺比對驗證
-- `visual-verdict` — 結構化視覺 diff 裁決
-- `verify-ui-auto` — ImageMagick SSIM 自動化像素對比
+- **`figma-use`** — use the official Figma MCP when quota is available (preferred). playwright-figma-scrape is a fallback for when Figma MCP hits View seat limits.
+- **`verify-ui`** — use after playwright-figma-scrape to do visual comparison verification between Figma mockups and actual code.
+- **`visual-verdict`** — use for structured visual diff validation after scraping Figma designs.
+- **`verify-ui-auto`** — use for automated pixel-based comparison via SSIM after playwright-figma-scrape screenshots.

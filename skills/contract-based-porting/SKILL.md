@@ -187,3 +187,7 @@ This methodology was used to port `openclaw-node` (Kotlin+Swift) → `claw_node`
 - **5 integration gaps** found and fixed (error parser, voice auto-restart, seam color, trust prompt, session drawer)
 - **245 tests**, 0 analysis issues
 - Total time: ~2 sessions with zero manual regression testing
+
+## Related skills
+
+See [What's inside](../../README.md#whats-inside) for related categories — contract-based-porting is a refactoring methodology without natural composition partners in other skill domains.
