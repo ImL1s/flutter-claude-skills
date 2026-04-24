@@ -16,6 +16,7 @@ Extracted and sanitized from real-world mobile app development experience.
 
 - [Why this repo?](#why-this-repo)
 - [Quick Start](#quick-start)
+- [Start here](#start-here) — decision tree for your task
 - [Playbooks](#playbooks) — cross-skill composition patterns
 - [What's inside](#whats-inside)
 - [Installation](#installation)
@@ -54,15 +55,40 @@ That's it. Repeat `cp -R` for any other skills you want, or symlink the whole `s
 
 ---
 
+## Start here
+
+Pick a row by your task, then follow the "Start with" skill and the linked playbook.
+
+| I want to... | Start with | Playbook | Category |
+|---|---|---|---|
+| ship a Flutter package / app to pub.dev or App Store | `writing-plans` → `flutter-verify` | [#1 Pub package release cycle](./PLAYBOOKS.md#playbook-1-pub-package-release-cycle) | Flutter core / Release |
+| write a test-first feature or fix | `test-driven-development` | [#2 TDD per task](./PLAYBOOKS.md#playbook-2-tdd-per-task) | Testing methodology |
+| open / review a PR with rigor | `requesting-code-review` ↔ `receiving-code-review` | [#3 Bidirectional code review](./PLAYBOOKS.md#playbook-3-bidirectional-code-review) | Code quality |
+| debug an unfamiliar Flutter bug | `systematic-debugging` | [#4 Debug Triage](./PLAYBOOKS.md#playbook-4-debug-triage) | Debugging |
+| implement a design from Figma | `figma-use` | [#5 Figma-to-Code Pipeline](./PLAYBOOKS.md#playbook-5-figma-to-code-pipeline) | Design / UI alignment |
+| cut a store release (TestFlight / Play) | `release-preflight` | [#6 Release Preflight Chain](./PLAYBOOKS.md#playbook-6-release-preflight-chain) | Release / distribution |
+| author a new Claude Code skill | `skill-creator` | [#7 Skill Authoring Loop](./PLAYBOOKS.md#playbook-7-skill-authoring-loop) | Meta / skill authoring |
+| initialize Firebase + monetization in a new app | `flutter-fullstack-init` or `firebase-flutter-setup` | [#8 Firebase + Monetization Init](./PLAYBOOKS.md#playbook-8-firebase--monetization-init) | Firebase / Monetization |
+| port native Android/iOS code to Flutter | `contract-based-porting` | — | Porting / refactoring |
+| clean up AI-generated slop from a branch | `ai-slop-cleaner` | — | Code quality |
+| something else | Browse [What's inside](#whats-inside) | — | — |
+
+---
+
 ## Playbooks
 
-Skills are most useful when **composed**. See [`PLAYBOOKS.md`](./PLAYBOOKS.md) for three cross-skill composition patterns distilled from real usage:
+Skills are most useful when **composed**. See [`PLAYBOOKS.md`](./PLAYBOOKS.md) for eight cross-skill composition patterns distilled from real usage:
 
-1. **Pub package release cycle** — `writing-plans` → `test-driven-development` → `flutter-verify` → `verification-before-completion` → `finishing-a-development-branch`
-2. **TDD per task** — `test-driven-development` → `testing-anti-patterns` → `flutter-verify`
-3. **Bidirectional code review** — `requesting-code-review` ↔ `receiving-code-review` → `finishing-a-development-branch`
+1. **Pub package release cycle** — `writing-plans` → `flutter-verify`
+2. **TDD per task** — `test-driven-development` → `testing-anti-patterns`
+3. **Bidirectional code review** — `requesting-code-review` ↔ `receiving-code-review`
+4. **Debug Triage** — `systematic-debugging` → `root-cause-tracing`
+5. **Figma-to-Code Pipeline** — `figma-use` → `figma-implement-design` → `verify-ui`
+6. **Release Preflight Chain** — `release-preflight` → `release-app`
+7. **Skill Authoring Loop** — `skill-creator` → `writing-skills`
+8. **Firebase + Monetization Init** — `flutter-fullstack-init` or `firebase-flutter-setup` → `admob-ux-best-practices`
 
-Each playbook names the skill chain, when it applies, and anchors to a public real-world example.
+Each playbook names the skill chain, when it applies, and anchors to worked examples in [`PLAYBOOKS.md`](./PLAYBOOKS.md).
 
 ---
 
