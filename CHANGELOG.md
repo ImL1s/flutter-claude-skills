@@ -10,6 +10,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 - `skills/kotlin-multiplatform/` — fabricated stub with fake frontmatter schema (`sasmp_version`, `bonded_agent`, etc. — never read by Claude Code harness) and unrelated Python filler in `references/PATTERNS.md` (categorized as "Database"). Use `skills/kmp/` (604-line canonical KMP skill). If you forked and referenced the path, update to `kmp`.
 
 ### Added
+- **PLAYBOOKS.md**: 5 new cross-skill composition patterns (Playbooks #4-#8): Debug Triage, Figma-to-Code Pipeline, Release Preflight Chain, Skill Authoring Loop, Firebase + Monetization Init.
+- **README.md**: "Start here" decision-tree table with 11 task rows + playbook/skill cross-references.
+- **All 66 skills**: `## Related skills` sections with skill composition guidance (1-4 entries per skill, or explicit fallback for design-system/methodology skills with no natural partners).
+- **Disambiguation mandate**: 5 overlap-pair disambiguations (e.g., `debug` vs `systematic-debugging`, `flutter-verify` vs `verify-ui`) to clarify when each skill applies.
 - `CONTRIBUTING.md` — full contributor guide (SKILL.md format, sanitization rules, language policy).
 - `CODE_OF_CONDUCT.md` — Contributor Covenant v2.1.
 - `CHANGELOG.md` — this file.
