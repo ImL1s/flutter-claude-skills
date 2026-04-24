@@ -1,0 +1,86 @@
+name: Skill bug report
+description: Report a skill that's broken, outdated, or misfiring
+title: "[Skill bug] <skill-name>: <short description>"
+labels: ["skill-bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report! The more concrete the reproduction, the faster the fix.
+
+  - type: input
+    id: skill-name
+    attributes:
+      label: Skill name
+      description: Which skill is broken?
+      placeholder: flutter-verify
+    validations:
+      required: true
+
+  - type: dropdown
+    id: bug-category
+    attributes:
+      label: Bug category
+      options:
+        - Stale / outdated command or API
+        - Wrong trigger (misfires / doesn't fire)
+        - Wrong expected output in examples
+        - Broken internal link / reference
+        - Placeholder / sanitized value missing from README table
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the actual behavior — include command output, error messages, or screenshots.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+      description: What should the skill have done instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Install the skill into `~/.claude/skills/`
+        2. Open Claude Code in <project type>
+        3. Ask: "<prompt>"
+        4. Observe: <actual output>
+    validations:
+      required: false
+
+  - type: input
+    id: claude-code-version
+    attributes:
+      label: Claude Code version
+      placeholder: e.g. 1.2.3
+    validations:
+      required: false
+
+  - type: input
+    id: os
+    attributes:
+      label: OS / environment
+      placeholder: macOS 14.5 / Ubuntu 24.04 / Windows 11
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-submit checklist
+      options:
+        - label: I've checked the skill's frontmatter and README for placeholders I need to fill in
+          required: true
+        - label: I've verified this isn't a duplicate of an existing open issue
+          required: true

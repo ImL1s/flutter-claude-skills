@@ -1,0 +1,13 @@
+.DS_Store
+*.log
+node_modules/
+.vscode/
+.idea/
+*.swp
+
+# Local audit reports (not for public consumption)
+AUDIT_*.md
+
+# Internal planning + orchestration state (ralplan / ralph / team), not for public
+docs/plans/
+.omc/

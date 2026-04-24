@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Claude Code documentation
+    url: https://docs.claude.com/en/docs/claude-code/skills
+    about: Official Claude Code skills documentation
+  - name: oh-my-claudecode
+    url: https://github.com/oh-my-claudecode/oh-my-claudecode
+    about: Multi-agent orchestration layer for Claude Code

@@ -1,0 +1,84 @@
+name: Skill request
+description: Propose a new Claude Code skill for this collection
+title: "[Skill request] <skill-name>"
+labels: ["skill-request", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing a new skill! Please fill in the details below so reviewers can evaluate the request.
+
+  - type: input
+    id: skill-name
+    attributes:
+      label: Proposed skill name
+      description: lowercase, hyphen-separated, concise (e.g. `flutter-verify`)
+      placeholder: my-new-skill
+    validations:
+      required: true
+
+  - type: input
+    id: category
+    attributes:
+      label: Category
+      description: Which category fits best? (Flutter core / Dart testing / Firebase / Debugging / Design / Release / etc.)
+      placeholder: Flutter core
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this skill solve?
+      description: The concrete pain point, bug, or workflow gap this skill addresses.
+    validations:
+      required: true
+
+  - type: textarea
+    id: triggers
+    attributes:
+      label: Trigger conditions
+      description: When should Claude Code auto-invoke this skill? Keywords, file paths, or user intents.
+      placeholder: |
+        - User asks about Flutter background tasks
+        - Files under `ios/Runner/AppDelegate.swift` or `android/**/WorkManager*`
+        - Commands: `background_fetch`, `BGTaskScheduler`
+    validations:
+      required: true
+
+  - type: textarea
+    id: skip-conditions
+    attributes:
+      label: When to skip
+      description: Conditions under which the skill should NOT activate (to avoid false positives).
+      placeholder: |
+        - Not a Flutter project
+        - No iOS/Android platform code in scope
+    validations:
+      required: false
+
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Proposed workflow outline
+      description: Short sketch of the skill's steps — not the full SKILL.md, just the shape.
+    validations:
+      required: true
+
+  - type: textarea
+    id: existing-experience
+    attributes:
+      label: Existing experience / references
+      description: Have you used this workflow in a real project? Links to docs, blog posts, or relevant code are welcome.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-submit checklist
+      options:
+        - label: I've searched existing skills and confirmed this isn't a duplicate
+          required: true
+        - label: I'm willing to author the initial SKILL.md if the request is accepted
+          required: false
