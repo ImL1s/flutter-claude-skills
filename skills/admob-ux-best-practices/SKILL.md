@@ -298,3 +298,8 @@ onAdLoaded: (ad) {
 },
 ```
 
+## Related skills
+
+- **`firebase-flutter-setup`** → **`firebase-auth-manager`** → **`admob-ux-best-practices`** — use in sequence for monetized apps. Firebase sets up the backend, auth implements sign-in, admob-ux-best-practices integrates ads responsibly.
+- **`revenuecat-manager`** — use alongside admob-ux-best-practices for monetization. Admob handles ads; revenuecat handles subscriptions.
+

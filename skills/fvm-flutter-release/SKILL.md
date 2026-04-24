@@ -100,3 +100,8 @@ For Xcode 26.x `exportArchive` bug workaround, macOS, or Firebase web deploy, se
 | Picking fvm version by Flutter number | Match by **Dart SDK** version against pubspec `sdk:` constraint |
 | Forgetting `--dart-define` for release | Pass API keys via env vars, never hardcode |
 | Uploading APK to Play Store | Always use `appbundle` (AAB) |
+
+## Related skills
+
+- **`release-preflight`** → **`flutter-verify`** → **`release-app`** → **`mobile-store-upload-cli`** — use fvm-flutter-release during the preflight and verify stages to build release artifacts with specific Flutter versions.
+- **`flutter-pub-get-stuck`** — if flutter pub get hangs when using FVM, use this skill to diagnose the issue.

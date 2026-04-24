@@ -284,3 +284,9 @@ Shift+2 之后截图才是 "该 node 居中铺满" 的效果；Shift+1 会看到
 1. 直接告知用户：Playwright MCP 未注册，需要重启 Claude Code（新 session 会读 `~/.claude.json` worktree entry）
 2. 等用户重启后，先 ToolSearch 验证 `mcp__playwright__browser_navigate` 可用再继续
 3. 如果连重启都无效，检查 `~/.claude.json` 里当前 worktree 路径是否有 `mcpServers.playwright` 条目
+
+## Related skills
+
+- **`figma-use`** → **`figma-implement-design`** — use as fallback when Figma MCP is unavailable. Primary path: figma-use; fallback: figma-playwright-fallback.
+- **`playwright-figma-scrape`** — more feature-rich Playwright-based scraping when figma-playwright-fallback proves insufficient.
+- **`verify-ui`** → **`visual-verdict`** — after scraping Figma, verify implementation matches design.

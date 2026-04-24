@@ -310,3 +310,9 @@ Figma get_design_context → AI 生成/修改代码 → hot_reload → 截图
 - **Golden test 跨平台限制**：macOS 生成的参考图在 Linux CI 上会 fail（字体渲染差异），必须用统一环境或 Alchemist 双 golden
 - **渲染引擎/版本变更**：Flutter 3.27+ 默认 Impeller，升级 SDK 后 golden 可能需要更新（渲染引擎、字体、阴影等都可能变化）
 - **DPR 影响文件大小**：高 DPR 设备的 golden 文件显著更大（3x DPR = 9 倍像素数）
+
+## Related skills
+
+- **`verify-ui`** — **DISAMBIGUATION**: verify-ui is manual screenshot comparison and iteration. verify-ui-auto is automated golden-file visual regression testing. Use verify-ui first for initial implementation verification; then use verify-ui-auto for CI-based regression prevention.
+- **`visual-verdict`** — use alongside verify-ui to quantify diffs before setting up verify-ui-auto golden tests.
+- **`figma-implement-design`** — after implementing a Figma design, use verify-ui for manual comparison, then verify-ui-auto to set up automated visual testing.

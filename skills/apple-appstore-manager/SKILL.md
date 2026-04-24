@@ -2822,3 +2822,9 @@ requests.delete(f"{BASE_URL}/appInfoLocalizations/{loc_id}", headers=headers)  #
 - [App Store Server API](https://developer.apple.com/documentation/appstoreserverapi)
 - [RevenueCat REST API v2](https://www.revenuecat.com/docs/api-v2)
 - [RevenueCat API Reference](https://www.revenuecat.com/reference/revenuecat-rest-api)
+
+## Related skills
+
+- **`release-app`** — high-level submission orchestration. Use release-app for automation; use apple-appstore-manager for detailed API-level control.
+- **`mobile-store-upload-cli`** — for CLI-based upload workflows on iOS and Android in parallel.
+- **`store-console-playbooks`** — review store listing before submission.

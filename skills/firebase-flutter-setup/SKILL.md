@@ -166,3 +166,9 @@ app/ios/Runner/GoogleService-Info.plist
 # FVM
 app/.fvm/
 ```
+
+## Related skills
+
+- **`firebase-auth-manager`** — implement user sign-in after Firebase is initialized. Firebase-flutter-setup provides the backend infrastructure; firebase-auth-manager builds the auth UX.
+- **`admob-ux-best-practices`** → **`revenuecat-manager`** — integrate monetization after Firebase is set up. Use these for ads and subscriptions.
+- **`flutter-verify`** — after setup completes, verify Firebase services are accessible and auth flows work end-to-end.

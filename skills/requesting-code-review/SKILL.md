@@ -103,3 +103,9 @@ You: [Fix progress indicators]
 - Request clarification
 
 See template at: requesting-code-review/code-reviewer.md
+
+## Related skills
+
+- **`ai-slop-cleaner`** — run before requesting review to strip boilerplate and unfounded assumptions. Use this to polish the work, then request review.
+- **`receiving-code-review`** — process feedback non-defensively after code-reviewer returns. Apply Critical/Important fixes, then use this skill.
+- **`finishing-a-development-branch`** — after all feedback is integrated, use this skill to decide merge strategy and land the branch.

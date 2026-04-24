@@ -172,3 +172,9 @@ From debugging session (2025-10-03):
 - Fixed at source (getter validation)
 - Added 4 layers of defense
 - 1847 tests passed, zero pollution
+
+## Related skills
+
+- **`systematic-debugging`** — use to identify which layer the bug lives in (Dart, native, bridge). Root-cause-tracing zooms in on that layer to find the exact trigger.
+- **`defense-in-depth`** — after tracing to root cause and fixing at source, use this skill to add validation at multiple layers so similar bugs are caught earlier.
+- **`test-driven-development`** — write a failing test that reproduces the original symptom, trace to root cause, fix, then use TDD to implement the fix with test discipline.

@@ -137,3 +137,9 @@ From 24 failure memories:
 Run the command. Read the output. THEN claim the result.
 
 This is non-negotiable.
+
+## Related skills
+
+- **`test-driven-development`** — implement with TDD (red→green→refactor); then apply this skill to gate completion.
+- **`flutter-verify`** — Flutter-specific verification pipeline (analyze, test, device checks). This skill provides the universal gate function; `flutter-verify` is the concrete tool chain.
+- **`finishing-a-development-branch`** — after verification passes, use this skill to decide merge strategy and land the branch with clear commit discipline.

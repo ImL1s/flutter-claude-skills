@@ -293,3 +293,11 @@ From debugging sessions:
 - Random fixes approach: 2-3 hours of thrashing
 - First-time fix rate: 95% vs 40%
 - New bugs introduced: Near zero vs common
+
+## Related skills
+
+- **`root-cause-tracing`** — required for digging through deep call stacks. Systematic-debugging identifies the layer; root-cause-tracing pinpoints the exact cause within that layer.
+- **`flutter-mobile-debugging`** — use after systematic-debugging identifies which layer the bug lives in. For native-layer crashes, attach native debuggers (LLDB, Android Studio).
+- **`test-driven-development`** — after identifying the root cause, write a failing test that reproduces the bug, then fix it using TDD cycle.
+- **`flutter-verify`** — verify the fix works on the exact device/OS where it crashed before claiming the bug is fixed.
+- **`debug`** — **DISAMBIGUATION**: debug is for OMC/Claude-Code session and workflow issues. systematic-debugging is for app code debugging. Use systematic-debugging for app crashes; use debug for harness problems.

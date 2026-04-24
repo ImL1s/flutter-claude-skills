@@ -272,3 +272,8 @@ fvm flutter test --coverage
 # Specific directory
 fvm flutter test test/core/
 ```
+
+## Related skills
+
+- **`flutter-unit-testing`** — **DISAMBIGUATION**: flutter-unit-testing is Flutter/Dart-specific unit testing with TDD discipline. unit-testing-dart focuses on Dart test patterns and best practices. Use flutter-unit-testing for TDD workflows; use unit-testing-dart for test quality audits.
+- **`testing-anti-patterns`** — audit your tests to catch mocking errors, framework mocking, and test-only production code after unit-testing-dart.

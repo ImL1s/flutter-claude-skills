@@ -207,3 +207,9 @@ You understand 1,2,3,6. Unclear on 4,5.
 Verify. Question. Then implement.
 
 No performative agreement. Technical rigor always.
+
+## Related skills
+
+- **`requesting-code-review`** — dispatch code-reviewer before using this skill. After feedback arrives, use this skill to process it non-defensively.
+- **`finishing-a-development-branch`** — after all feedback is applied and work is clean, use this skill to decide merge strategy and land the branch.
+- **`ai-slop-cleaner`** — if feedback includes boilerplate removal, run this skill alongside receiving-code-review to polish the code.

@@ -34,5 +34,5 @@ Strict verification flow for comparing Flutter UI against Figma or reference des
 
 ## Related skills
 
-- **`verify-ui-auto`** — automated visual-verification pipeline (Marionette → Figma → pixel-diff → auto-fix loop). Use when you want CI-like UI verification; this `verify-ui` skill is the manual checklist variant.
+- **`verify-ui-auto`** — **DISAMBIGUATION**: verify-ui is manual screenshot comparison and iteration. verify-ui-auto is automated golden-file visual regression testing. Use verify-ui for initial implementation verification; use verify-ui-auto for CI-based regression prevention.
 - **`visual-verdict`** — JSON-structured verdict format for screenshot-to-reference comparison output. Use as the output spec when `verify-ui` / `verify-ui-auto` produce verdicts consumed by downstream tooling.

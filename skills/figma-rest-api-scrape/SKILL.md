@@ -255,3 +255,9 @@ curl -s -H "X-FIGMA-TOKEN: $PAT" \
 ## 引用 memory
 
 `reference_figma_pat.md` — Figma 帳號 email / user ID / handle + Keychain 存取指令
+
+## Related skills
+
+- **`figma-use`** → **`figma-implement-design`** — use REST API to extract design context, then implement into code.
+- **`playwright-figma-scrape`** — fallback when REST API has limitations (annotation reading, UI state interaction).
+- **`figma-playwright-fallback`** — minimal Playwright-based scraping as a last resort.

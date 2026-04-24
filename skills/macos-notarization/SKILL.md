@@ -106,3 +106,8 @@ xcrun notarytool store-credentials "YOUR_PROFILE_NAME" \
 2. **Hardened Runtime** 必須啟用（專案已配置）
 3. **簽名身份**必須是 `Developer ID Application`
 4. DMG 和 .app 都可以單獨公證，但通常公證 DMG 即可
+
+## Related skills
+
+- **`release-preflight`** → **`release-app`** — use macos-notarization as part of the macOS-specific release workflow. Handle notarization after preflight and before release-app submits.
+- **`apple-appstore-manager`** — manage App Store metadata after notarization completes.

@@ -477,3 +477,9 @@ Repeating one more time the core loop here for emphasis:
 Please add steps to your TodoList, if you have such a thing, to make sure you don't forget. If you're in Cowork, please specifically put "Create evals JSON and run `eval-viewer/generate_review.py` so human can review test cases" in your TodoList to make sure it happens.
 
 Good luck!
+
+## Related skills
+
+- **`writing-skills`** — after creating the skill structure, use this skill to author the SKILL.md documentation file. Skill-creator handles the definition and scope; writing-skills handles the documentation quality and clarity.
+- **`testing-skills-with-subagents`** — use after writing-skills completes to test the skill against real workflows. Verify the skill is useful and produces correct output.
+- **`ai-slop-cleaner`** — after testing confirms the skill works, run this to remove boilerplate and polish the documentation before shipping.

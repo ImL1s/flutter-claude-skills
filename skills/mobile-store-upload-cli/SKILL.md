@@ -34,3 +34,9 @@ Follow the Android reference for commands and required inputs.
 - Never commit secrets (API keys, app-specific passwords, service account JSON).
 - Prefer placeholders and environment variables in commands.
 - If a required tool is missing, suggest the minimal install step for that tool.
+
+## Related skills
+
+- **`release-app`** — higher-level skill for submission. Use release-app for automated submission; use mobile-store-upload-cli for manual CLI-first workflows.
+- **`release-preflight`** — verify the build before upload. Preflight catches signing and version issues before upload.
+- **`store-console-playbooks`** — review store listing metadata while waiting for upload processing to complete.

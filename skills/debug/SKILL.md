@@ -33,3 +33,6 @@ Find the real failure signal quickly and explain the next corrective step.
 - Evidence for that hypothesis
 - Smallest next action
 
+## Related skills
+
+- **`systematic-debugging`** — **DISAMBIGUATION**: systematic-debugging is for debugging app code and production issues. debug is for diagnosing OMC/Claude-Code session and workflow issues. Use systematic-debugging for app crashes/bugs; use debug for harness/session problems.

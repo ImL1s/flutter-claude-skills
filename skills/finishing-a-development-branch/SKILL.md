@@ -198,3 +198,9 @@ git worktree remove <worktree-path>
 
 **Pairs with:**
 - **using-git-worktrees** - Cleans up worktree created by that skill
+
+## Related skills
+
+- **`writing-plans`** — generates the plan document that you reference in the merge commit message. Use this skill after writing-plans is complete.
+- **`verification-before-completion`** — verify tests pass before presenting merge options. This skill's Step 1 depends on verification evidence.
+- **`requesting-code-review`** → `receiving-code-review` — handle code review feedback using these skills before finishing the branch.

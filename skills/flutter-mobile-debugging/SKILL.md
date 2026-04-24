@@ -200,3 +200,9 @@ xcrun simctl launch <UDID> <BUNDLE_ID>
 ```
 
 **Prevention:** Disconnect real iOS devices when targeting simulator only.
+
+## Related skills
+
+- **`systematic-debugging`** — use first to identify which layer the bug lives in (Dart, native, bridge). Flutter-mobile-debugging is the concrete tool chain for attaching debuggers and inspecting native code.
+- **`root-cause-tracing`** — use to trace through call stacks before attaching debuggers. Narrow down the exact location, then use native debuggers from this skill.
+- **`flutter-verify`** — after fixing using native debugger, verify the fix works on the exact device/OS where it crashed.

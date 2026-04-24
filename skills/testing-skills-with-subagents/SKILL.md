@@ -385,3 +385,8 @@ From applying TDD to TDD skill itself (2025-10-03):
 - Each REFACTOR closed specific loopholes
 - Final VERIFY GREEN: 100% compliance under maximum pressure
 - Same process works for any discipline-enforcing skill
+
+## Related skills
+
+- **`skill-creator`** → **`writing-skills`** — use after authoring a skill to test it thoroughly. Testing-skills-with-subagents verifies the skill works on real workflows.
+- **`ai-slop-cleaner`** — after testing confirms the skill is bulletproof, run this to remove boilerplate and unsupported claims before shipping.

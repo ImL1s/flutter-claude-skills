@@ -131,3 +131,8 @@ In review mode:
 **Bad:** `refactor auth to support SSO`
 
 **Bad:** `clean up formatting`
+
+## Related skills
+
+- **`requesting-code-review`** → **`receiving-code-review`** — use this skill before requesting review to strip boilerplate and unfounded claims. Polish the work, then request review.
+- **`writing-skills`** — when authoring new skill documentation, run this skill afterward to remove AI-generated filler (clichés, unsupported claims, boilerplate marketing language).

@@ -217,3 +217,9 @@ Before claiming tests are complete:
 - [ ] No tests that ONLY verify mock behavior
 - [ ] Test names describe WHAT behavior is being verified
 - [ ] All tests pass: `fvm flutter test`
+
+## Related skills
+
+- **`unit-testing-dart`** — **DISAMBIGUATION**: unit-testing-dart covers Dart test patterns and quality best practices. flutter-unit-testing is the TDD workflow for Flutter. Use flutter-unit-testing for TDD cycles; use unit-testing-dart for test quality audits.
+- **`test-driven-development`** — use alongside flutter-unit-testing. TDD provides the red→green→refactor cycle; flutter-unit-testing provides the Flutter-specific test patterns.
+- **`testing-anti-patterns`** — run after unit tests pass to catch mocking errors.

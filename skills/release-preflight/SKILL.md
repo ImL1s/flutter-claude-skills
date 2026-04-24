@@ -83,3 +83,9 @@ description: Flutter 雙平台發版前的 pre-flight 檢查清單，確保 buil
 
 - 所有項目通過 → 回報 "Pre-flight 全部通過，準備開始 build"
 - 任何項目失敗 → 列出失敗項目和修復建議，不要跳過繼續 build
+
+## Related skills
+
+- **`flutter-verify`** — after preflight passes, verify the release build on real devices (not emulator). Catch platform-specific crashes.
+- **`store-console-playbooks`** — review store listing (screenshots, description, release notes) after preflight succeeds.
+- **`release-app`** — submit the build to App Store/Play Store after all checks pass.

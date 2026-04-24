@@ -114,3 +114,9 @@ After saving the plan, offer execution choice:
 **If Parallel Session chosen:**
 - Guide them to open new session in worktree
 - **REQUIRED SUB-SKILL:** New session uses superpowers:executing-plans
+
+## Related skills
+
+- **`test-driven-development`** — use after plan is approved to implement features/fixes with TDD cycle (red→green→refactor). Plan specifies what; TDD implements it with test-first discipline.
+- **`verification-before-completion`** — universal gate to confirm plan requirements are actually satisfied by implementation (not just claimed).
+- **`finishing-a-development-branch`** — merge strategy and commit discipline after all plan tasks complete.

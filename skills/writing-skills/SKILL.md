@@ -620,3 +620,9 @@ Same cycle: RED (baseline) → GREEN (write skill) → REFACTOR (close loopholes
 Same benefits: Better quality, fewer surprises, bulletproof results.
 
 If you follow TDD for code, follow it for skills. It's the same discipline applied to documentation.
+
+## Related skills
+
+- **`skill-creator`** — define the skill scope and structure first. Skill-creator handles the definition; writing-skills handles the documentation and testing.
+- **`testing-skills-with-subagents`** — use after writing-skills completes to test the skill against real development scenarios. Verify the skill is bulletproof.
+- **`ai-slop-cleaner`** — after testing confirms the skill works, run this to remove boilerplate and filler language before shipping.

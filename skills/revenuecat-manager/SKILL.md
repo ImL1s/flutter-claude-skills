@@ -696,3 +696,8 @@ The warning banner "missing its In-App Purchase Key" may persist in the DOM even
 - [RevenueCat API v2 Docs](https://www.revenuecat.com/docs/api-v2)
 - [API Reference](https://www.revenuecat.com/reference/revenuecat-rest-api)
 - [Dashboard](https://app.revenuecat.com)
+
+## Related skills
+
+- **`firebase-flutter-setup`** → **`firebase-auth-manager`** → **`admob-ux-best-practices`** → **`revenuecat-manager`** — use in sequence for monetized apps. Firebase sets up backend, auth implements sign-in, admob handles ads, revenuecat handles subscriptions.
+- **`flutter-verify`** — after configuring RevenueCat, verify subscription purchase flows work end-to-end on real devices (purchase, restoration, entitlement gating).

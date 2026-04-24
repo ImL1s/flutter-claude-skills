@@ -276,3 +276,8 @@ Use `apple-appstore-manager` skill — screenshots are uploaded via App Store Co
 | Ads visible in screenshots | AdMob loaded during capture | Use `--dart-define=DISABLE_ADS=true` |
 | `magick` not found on Windows | ImageMagick not installed | Use Pillow (Step 3b) as alternative |
 | Same screenshots for all locales | Only overlay text changed | Capture separate raw screenshots per locale (see Multi-Locale) |
+
+## Related skills
+
+- **`store-console-playbooks`** — after beautifying screenshots, use this skill to upload them to the store and review store listing.
+- **`release-app`** — handle the full release workflow. Beautify screenshots first, then submit via release-app.

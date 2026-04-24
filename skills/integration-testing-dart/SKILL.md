@@ -237,3 +237,9 @@ fvm flutter test test/integration/dictation_flow_test.dart
 | Speed | <1ms per test | <100ms per test |
 | Failures | Pinpoint exact bug | Show broken contract |
 | When to write | Every public method | Every cross-module flow |
+
+## Related skills
+
+- **`flutter-integration-testing`** — **DISAMBIGUATION**: flutter-integration-testing is Flutter-specific integration testing with device/widget verification. integration-testing-dart covers Dart integration test patterns across modules. Use flutter-integration-testing for Flutter widget integration tests; use integration-testing-dart for multi-module Dart integration testing.
+- **`test-driven-development`** — use TDD for both unit and integration tests.
+- **`testing-anti-patterns`** — audit integration tests to avoid framework mocking.

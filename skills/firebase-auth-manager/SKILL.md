@@ -311,3 +311,8 @@ The Play Store App Signing Key SHA-1 is **NOT available via Google Play Develope
 1. **Missing `accessToken`**: Firebase needs `authorizationCode` from Apple. Pass it as `accessToken` in `OAuthProvider.credential()`
 2. **Wrong `clientId`**: iOS tokens have `aud` = bundle ID. If Firebase `clientId` is Services ID, audience won't match
 3. **Provider not enabled**: Verify with List Providers API above
+
+## Related skills
+
+- **`firebase-flutter-setup`** — initialize Firebase services first. Firebase-auth-manager builds the sign-in UX on top.
+- **`flutter-verify`** — after implementing auth, verify sign-in flows work end-to-end on real devices (email/password, social login, token refresh).

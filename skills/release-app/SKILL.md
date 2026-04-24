@@ -380,3 +380,9 @@ security cms -D -i ~/Library/MobileDevice/Provisioning\ Profiles/YOUR.mobileprov
 | **僵屍 reviewSubmissions 無法刪除** | 不要用 API 亂建 `reviewSubmissions`！先查有無既有可用的 |
 | **REJECTED 後如何 resubmit** | 參見 `store-publishing-automation` skill 的 REJECTED Resubmission Workflow 段落 |
 
+## Related skills
+
+- **`release-preflight`** — verify before submission. Run preflight checks first to catch signing/version issues before upload.
+- **`store-console-playbooks`** — review store listing before using release-app. Verify screenshots, description, release notes are ready.
+- **`mobile-store-upload-cli`** — track submission status after release-app submits the build. Monitor review progress and handle rejections.
+

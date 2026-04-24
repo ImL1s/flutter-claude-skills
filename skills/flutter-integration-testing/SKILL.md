@@ -251,3 +251,9 @@ MaterialApp(
 - [ ] Async loading states verified (loading → data → error)
 - [ ] No flaky time-dependent assertions
 - [ ] All tests pass: `fvm flutter test`
+
+## Related skills
+
+- **`integration-testing-dart`** — **DISAMBIGUATION**: integration-testing-dart covers multi-module Dart integration test patterns. flutter-integration-testing is Flutter-specific widget integration testing. Use flutter-integration-testing for Flutter widget tests; use integration-testing-dart for Dart module integration tests.
+- **`test-driven-development`** — use TDD for integration test implementation.
+- **`testing-anti-patterns`** — audit for mocking errors after integration tests pass.

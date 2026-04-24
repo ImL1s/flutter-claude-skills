@@ -125,3 +125,8 @@ All four layers were necessary. During testing, each layer caught bugs the other
 - Debug logging identified structural misuse
 
 **Don't stop at one validation point.** Add checks at every layer.
+
+## Related skills
+
+- **`root-cause-tracing`** — use to identify the root cause of a bug. After finding the source, use defense-in-depth to add validation at every layer so similar bugs can't escape.
+- **`systematic-debugging`** — when investigating a bug, trace to root cause first, then apply defense-in-depth to add guards at multiple layers.

@@ -118,3 +118,8 @@ From debugging session (2025-10-03):
 - Pass rate: 60% → 100%
 - Execution time: 40% faster
 - No more race conditions
+
+## Related skills
+
+- **`systematic-debugging`** — use when investigating flaky tests or timing-dependent failures. Systematic-debugging identifies the layer and timing issue; condition-based-waiting provides the fix pattern.
+- **`test-driven-development`** — use when writing tests that depend on async operations. Apply condition-based-waiting to avoid arbitrary timeouts.

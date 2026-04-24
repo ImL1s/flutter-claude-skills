@@ -362,3 +362,9 @@ Otherwise → not TDD
 ```
 
 No exceptions without your human partner's permission.
+
+## Related skills
+
+- **`testing-anti-patterns`** — run after red→green→refactor to audit the test for common mocking errors (testing mock behavior, framework mocking). Use to validate TDD tests.
+- **`flutter-verify`** — run after a green commit to confirm all layers pass (analyze, test, device checks). TDD produces the failing-then-passing test; flutter-verify confirms the implementation is valid across all verification layers.
+- **`verification-before-completion`** — universal gate function preventing incomplete work. Apply after TDD cycle finishes to confirm evidence is documented.

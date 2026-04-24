@@ -184,3 +184,8 @@ Get-ChildItem "C:\Users\$env:USERNAME\fvm\versions" -Filter "flutter.bat" -Recur
 4. **Check for zombie processes** if your machine feels slow or after IDE crashes
 5. **Don't interrupt `flutter upgrade`** — if you must, delete `bin/cache` afterward
 6. **When using FVM, stick to one version per terminal session** — rapid version switching can corrupt the cache
+
+## Related skills
+
+- **`systematic-debugging`** — use when flutter pub get hangs to diagnose whether it's a process lock, network issue, or corrupted cache.
+- **`fvm-flutter-release`** — for release builds, ensure flutter pub get completes cleanly before using FVM for version-specific builds.
