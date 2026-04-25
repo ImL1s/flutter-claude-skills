@@ -9,6 +9,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 ### Fixed
 - `apple-appstore-manager/scripts/app_review_watch.sh` — repaired broken `APPS` array syntax (stray `)"` mid-array caused `bash -n` to fail; script could not execute).
 - `visual-verdict/SKILL.md` — removed unresolved `{{ARGUMENTS}}` template artifact that was being injected literally into agent context.
+- `skills/figma-use`, `skills/figma-implement-design`, `skills/kmp` — replaced dangling symlinks (pointing to a maintainer-local `.agents/skills/` directory that does not exist in the public repo) with the actual SKILL.md content. These three skills had been listed in the README and CHANGELOG since the initial release but never shipped real content on GitHub. `figma-use` now also ships its 17-file `references/` directory (Figma plugin API docs, design-system patterns, gotchas).
 
 ### Removed
 - `skills/kotlin-multiplatform/` — fabricated stub with fake frontmatter schema (`sasmp_version`, `bonded_agent`, etc. — never read by Claude Code harness) and unrelated Python filler in `references/PATTERNS.md` (categorized as "Database"). Use `skills/kmp/` (604-line canonical KMP skill). If you forked and referenced the path, update to `kmp`.
