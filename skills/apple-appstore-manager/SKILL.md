@@ -148,7 +148,7 @@ Track your team's apps here as you register them:
 |---------|-----------|--------|--------|
 | `<YourApp>` | `com.example.yourapp` | `<numeric-app-id>` | Production / Prepare / Review |
 
-> Tip: Use `bash scripts/audit-team-apps.sh` to auto-sync this table from App Store Connect API.
+> Tip: To auto-populate this table, query App Store Connect API (`/v1/apps?fields[apps]=bundleId,name`) with a JWT-signed token — see Apple's [App Store Connect API docs](https://developer.apple.com/documentation/appstoreconnectapi/list_apps) for the bearer-token format.
 
 ---
 
