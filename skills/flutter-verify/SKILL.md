@@ -1,6 +1,10 @@
 ---
 name: flutter-verify
-description: 改完代碼後的多層驗證流程。靜態分析 + 跑測試 + widget tree 檢查 + runtime error 檢測。觸發詞：verify、驗證、確認改動
+description: |
+  Multi-layer verification flow after Flutter code changes: static analysis + tests + widget tree check + runtime error detection. Run after edits before claiming the change works.
+  Triggers (English): verify changes, flutter verify, flutter analyze, widget tree check, runtime error detection, post-edit verification.
+  改完代碼後的多層驗證流程。靜態分析 + 跑測試 + widget tree 檢查 + runtime error 檢測。
+  觸發詞（中文）：verify、驗證、確認改動
 ---
 
 # Flutter 多層驗證

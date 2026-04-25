@@ -1,9 +1,10 @@
 ---
 name: verify-ui-auto
 description: |
+  Automated UI verification loop: Marionette screenshot -> Figma reference -> pixel-diff -> difference list -> auto-fix iteration. Solves the false-positive verification problem flagged in insights reports (UI claimed fixed without actually being compared against the reference).
+  Triggers (English): verify ui, ui compare, pixel diff, figma compare, automated ui verification, golden test fail.
   自动 UI 验证：Marionette 截图 → Figma 参考图 → pixel-diff → 差异列表 → 自动修复循环。
-  解决 insights 报告指出的"假阳性验证"问题（43 次 wrong_approach 中大量是 UI 声称修好但没对比）。
-  触发关键字：verify ui、ui 对比、pixel diff、figma 对比、自动验证
+  触发关键字（中文）：verify ui、ui 对比、pixel diff、figma 对比、自动验证
 ---
 
 ## 核心流程
