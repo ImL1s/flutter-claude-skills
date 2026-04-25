@@ -9,14 +9,7 @@ set -euo pipefail
 declare -a APPS=(
   # Format: "APPLE_APP_ID|Human-Readable Name"
   # Replace with your own team's apps:
-
-
-)"
-
-
-
-
-
+  # "1234567890|MyApp"
 )
 
 TOTAL_NEW=0
