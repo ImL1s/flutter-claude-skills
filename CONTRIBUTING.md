@@ -97,6 +97,17 @@ Known limitations, edge cases, or environment requirements.
 - Concrete examples with expected output
 - Gotchas / known limitations
 
+### Optional frontmatter fields
+
+| Field | Type | Purpose |
+|-------|------|---------|
+| `requires-omc` | bool | Set `true` if the skill depends on `oh-my-claudecode` (OMC) private internals — invoking other OMC-namespaced skills, expecting OMC's session lifecycle, etc. Users without OMC will see this skill as broken. The current OMC-coupled skills are: `deep-dive`, `deep-interview`, `ai-slop-cleaner`, `visual-verdict`. |
+| `level` | int | Skill complexity tier (1=simple, 2=workflow, 3=meta-orchestration). Used by some Claude Code harnesses for ranking; safe to omit. |
+| `triggers` | array | Explicit trigger keywords. The harness primarily reads `description` for triggering, so this field is duplicative; include it only when you want the keywords machine-listable. |
+| `pipeline` | array | Names of downstream skills this one chains into. OMC-specific. |
+
+Unknown frontmatter fields are accepted by the CI validator but should be documented here before use.
+
 ---
 
 ## Sanitization rules
