@@ -6,6 +6,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ## [Unreleased]
 
+### Fixed
+- `apple-appstore-manager/scripts/app_review_watch.sh` — repaired broken `APPS` array syntax (stray `)"` mid-array caused `bash -n` to fail; script could not execute).
+- `visual-verdict/SKILL.md` — removed unresolved `{{ARGUMENTS}}` template artifact that was being injected literally into agent context.
+
 ### Removed
 - `skills/kotlin-multiplatform/` — fabricated stub with fake frontmatter schema (`sasmp_version`, `bonded_agent`, etc. — never read by Claude Code harness) and unrelated Python filler in `references/PATTERNS.md` (categorized as "Database"). Use `skills/kmp/` (604-line canonical KMP skill). If you forked and referenced the path, update to `kmp`.
 
@@ -19,6 +23,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 - `CHANGELOG.md` — this file.
 - `.github/ISSUE_TEMPLATE/` — skill request, skill bug, and config templates.
 - `.github/PULL_REQUEST_TEMPLATE.md` — PR checklist.
+- `.github/workflows/skill-check.yml` + `.github/scripts/check_skills.py` — P0 CI on every PR: frontmatter YAML validation, frontmatter `name` matches directory, README badge skill-count sync, kebab-case directory name check. Skips `_template/`.
+- `skills/_template/SKILL.md` — copy-paste starter for new skills with all required sections pre-populated. Excluded from skill-count via `_*` filter.
 - README badges, table of contents, "Why this repo?" section, collapsible categories, Quick Start.
 - GitHub repo topics: `flutter`, `dart`, `claude-code`, `anthropic`, `skills`, `ai`, `mobile-development`, `agentic`, `llm`, `developer-tools`.
 
