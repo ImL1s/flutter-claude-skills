@@ -5,6 +5,9 @@ on:
     paths:
       - 'skills/**'
       - 'README.md'
+      - 'CHANGELOG.md'
+      - 'CONTRIBUTING.md'
+      - 'PLAYBOOKS.md'
       - '.github/scripts/check_skills.py'
       - '.github/workflows/skill-check.yml'
   push:
@@ -12,7 +15,12 @@ on:
     paths:
       - 'skills/**'
       - 'README.md'
+      - 'CHANGELOG.md'
+      - 'CONTRIBUTING.md'
+      - 'PLAYBOOKS.md'
       - '.github/scripts/check_skills.py'
+      - '.github/workflows/skill-check.yml'
+  workflow_dispatch: {}
 
 jobs:
   validate:
