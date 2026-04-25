@@ -10,6 +10,16 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 - `apple-appstore-manager/scripts/app_review_watch.sh` — repaired broken `APPS` array syntax (stray `)"` mid-array caused `bash -n` to fail; script could not execute).
 - `visual-verdict/SKILL.md` — removed unresolved `{{ARGUMENTS}}` template artifact that was being injected literally into agent context.
 - `skills/figma-use`, `skills/figma-implement-design`, `skills/kmp` — replaced dangling symlinks (pointing to a maintainer-local `.agents/skills/` directory that does not exist in the public repo) with the actual SKILL.md content. These three skills had been listed in the README and CHANGELOG since the initial release but never shipped real content on GitHub. `figma-use` now also ships its 17-file `references/` directory (Figma plugin API docs, design-system patterns, gotchas).
+- 4 ghost cross-references removed: `skills/figma-implement-design/SKILL.md` no longer points at the non-existent `figma-generate-design`, `figma-code-connect-components`, or `figma-create-design-system-rules` skills (now points at the underlying Figma MCP tools instead). `skills/figma-use/SKILL.md` no longer redirects to the non-existent `figma-generate-design`. `skills/apple-appstore-manager/SKILL.md` no longer references `audit-team-apps.sh` (replaced with App Store Connect API documentation reference).
+
+### Changed
+- README "Start here" decision tree gains a row for UI / layout / rendering bugs routing to `verify-ui` and `flutter-listview-viewport-gotchas`. The previous Debugging row only covered crash / exception / hang triage.
+- README Debugging category strengthens disambiguation for the bare `debug` skill: it is now explicitly labeled as Claude Code session diagnostics and **not** for Flutter app bugs (use `systematic-debugging` for those).
+- 4 OMC-coupled skills (`deep-dive`, `deep-interview`, `ai-slop-cleaner`, `visual-verdict`) carry `requires-omc: true` in their frontmatter. The new field is documented in CONTRIBUTING.md alongside the other optional fields (`level`, `triggers`, `pipeline`).
+- `skills/verify-ui-auto/SKILL.md` and `skills/flutter-verify/SKILL.md` descriptions are now bilingual: English summary + explicit English trigger keyword list, with original Chinese preserved. Previously these two skills had Chinese-only descriptions which reduced activation probability in English-language sessions.
+
+### Removed
+- Legacy `superpowers:` namespace prefix stripped from 20 occurrences across 8 skills (`systematic-debugging`, `executing-plans`, `brainstorming`, `testing-skills-with-subagents`, `writing-plans`, `requesting-code-review`, `writing-skills`, `subagent-driven-development`). Bare skill names are the canonical format documented in `writing-skills/SKILL.md`. The `superpowers:` prefix was a legacy from a different skill system and did not resolve in OMC's current loader.
 
 ### Removed
 - `skills/kotlin-multiplatform/` — fabricated stub with fake frontmatter schema (`sasmp_version`, `bonded_agent`, etc. — never read by Claude Code harness) and unrelated Python filler in `references/PATTERNS.md` (categorized as "Database"). Use `skills/kmp/` (604-line canonical KMP skill). If you forked and referenced the path, update to `kmp`.
