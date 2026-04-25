@@ -64,7 +64,8 @@ Pick a row by your task, then follow the "Start with" skill and the linked playb
 | ship a Flutter package / app to pub.dev or App Store | `writing-plans` → `flutter-verify` | [#1 Pub package release cycle](./PLAYBOOKS.md#playbook-1-pub-package-release-cycle) | Flutter core / Release |
 | write a test-first feature or fix | `test-driven-development` | [#2 TDD per task](./PLAYBOOKS.md#playbook-2-tdd-per-task) | Testing methodology |
 | open / review a PR with rigor | `requesting-code-review` ↔ `receiving-code-review` | [#3 Bidirectional code review](./PLAYBOOKS.md#playbook-3-bidirectional-code-review) | Code quality |
-| debug an unfamiliar Flutter bug | `systematic-debugging` | [#4 Debug Triage](./PLAYBOOKS.md#playbook-4-debug-triage) | Debugging |
+| debug an unfamiliar Flutter bug (crash, exception, hang) | `systematic-debugging` | [#4 Debug Triage](./PLAYBOOKS.md#playbook-4-debug-triage) | Debugging |
+| fix a UI layout / rendering / overflow bug (visual mismatch, golden fail) | `verify-ui` → `flutter-listview-viewport-gotchas` | — | Design / UI alignment |
 | implement a design from Figma | `figma-use` | [#5 Figma-to-Code Pipeline](./PLAYBOOKS.md#playbook-5-figma-to-code-pipeline) | Design / UI alignment |
 | cut a store release (TestFlight / Play) | `release-preflight` | [#6 Release Preflight Chain](./PLAYBOOKS.md#playbook-6-release-preflight-chain) | Release / distribution |
 | author a new Claude Code skill | `skill-creator` | [#7 Skill Authoring Loop](./PLAYBOOKS.md#playbook-7-skill-authoring-loop) | Meta / skill authoring |
@@ -157,7 +158,7 @@ Each playbook names the skill chain, when it applies, and anchors to worked exam
 
 - `systematic-debugging` — four-phase diagnosis workflow
 - `root-cause-tracing` — trace errors back to original trigger
-- `debug` — diagnose OMC session or repo state
+- `debug` — Claude Code session / repo state diagnostics (**not** for Flutter app bugs — use `systematic-debugging` for those)
 - `defense-in-depth` — multi-layer input validation strategy
 
 </details>
