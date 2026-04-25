@@ -10,6 +10,9 @@ Checks:
 3. Frontmatter `name` matches the directory name.
 4. README skill-count badge matches the actual skill count.
 5. Directory name is kebab-case (lowercase + hyphens only).
+6. SKILL.md body has at least 3 H2 sections (proxy for the
+   required-sections spec in CONTRIBUTING.md: What this skill does +
+   When to trigger + Workflow, with Examples / Gotchas recommended).
 
 Directories beginning with `_` (e.g. `_template`) are skipped.
 """
@@ -27,6 +30,8 @@ README = REPO / "README.md"
 
 KEBAB_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 BADGE_RE = re.compile(r"badge/skills-(\d+)-")
+H2_RE = re.compile(r"^##\s+\S", re.MULTILINE)
+MIN_H2_SECTIONS = 3
 
 
 def parse_frontmatter(text: str):
@@ -82,6 +87,13 @@ def main() -> int:
             )
         if not fm.get("description"):
             errors.append(f"{d.name}: frontmatter missing required `description`")
+
+        body = skill_md.read_text(encoding="utf-8").split("---", 2)[-1]
+        h2_count = len(H2_RE.findall(body))
+        if h2_count < MIN_H2_SECTIONS:
+            errors.append(
+                f"{d.name}: only {h2_count} H2 section(s); expected ≥ {MIN_H2_SECTIONS} per CONTRIBUTING.md"
+            )
 
     readme_text = README.read_text(encoding="utf-8")
     badge_match = BADGE_RE.search(readme_text)

@@ -5,6 +5,7 @@ description: |
   Triggers (English): verify ui, ui compare, pixel diff, figma compare, automated ui verification, golden test fail.
   自动 UI 验证：Marionette 截图 → Figma 参考图 → pixel-diff → 差异列表 → 自动修复循环。
   触发关键字（中文）：verify ui、ui 对比、pixel diff、figma 对比、自动验证
+last-verified-against: Flutter 3.27 (2026-Q1)
 ---
 
 ## 核心流程

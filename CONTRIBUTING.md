@@ -105,6 +105,7 @@ Known limitations, edge cases, or environment requirements.
 | `level` | int | Skill complexity tier (1=simple, 2=workflow, 3=meta-orchestration). Used by some Claude Code harnesses for ranking; safe to omit. |
 | `triggers` | array | Explicit trigger keywords. The harness primarily reads `description` for triggering, so this field is duplicative; include it only when you want the keywords machine-listable. |
 | `pipeline` | array | Names of downstream skills this one chains into. OMC-specific. |
+| `last-verified-against` | string | Pin the tool/runtime version the skill was last checked against (e.g. `Flutter 3.27 (2026-Q1)`, `Codex CLI v0.118.0`). Useful for skills with version-specific behavior — flags staleness when readers compare against the field date. Format is free-text but should include a version + a date marker for grep-ability. |
 
 Unknown frontmatter fields are accepted by the CI validator but should be documented here before use.
 

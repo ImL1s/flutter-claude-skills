@@ -98,7 +98,7 @@ Each playbook names the skill chain, when it applies, and anchors to worked exam
 
 ## What's inside
 
-**66 skills** organized by category. Each skill is a `SKILL.md` file that Claude Code auto-loads when its trigger conditions match.
+**67 skills** organized by category. Each skill is a `SKILL.md` file that Claude Code auto-loads when its trigger conditions match.
 
 <details>
 <summary><b>Flutter core (14)</b></summary>
@@ -147,27 +147,27 @@ Each playbook names the skill chain, when it applies, and anchors to worked exam
 </details>
 
 <details>
-<summary><b>Testing methodology (4)</b></summary>
+<summary><b>Testing methodology (5)</b></summary>
 
 - `test-driven-development` — red/green/refactor loop enforcement
 - `testing-anti-patterns` — detect and avoid fake tests / mock overuse
 - `verification-before-completion` — require fresh evidence before claiming done
 - `condition-based-waiting` — replace flaky timing dependencies
+- `webapp-testing` — Playwright-based local webapp testing (web targets, not Flutter widgets)
 
 </details>
 
 <details>
-<summary><b>Debugging (4)</b></summary>
+<summary><b>Debugging (3)</b></summary>
 
 - `systematic-debugging` — four-phase diagnosis workflow
 - `root-cause-tracing` — trace errors back to original trigger
 - `debug` — Claude Code session / repo state diagnostics (**not** for Flutter app bugs — use `systematic-debugging` for those)
-- `defense-in-depth` — multi-layer input validation strategy
 
 </details>
 
 <details>
-<summary><b>Design / UI alignment (9)</b></summary>
+<summary><b>Design / UI alignment (8)</b></summary>
 
 - `playwright-figma-scrape` — systematic Figma scraping (screenshot / token / inventory) via Playwright MCP
 - `figma-rest-api-scrape` — faster/cleaner alternative via Figma REST API + PAT
@@ -177,7 +177,6 @@ Each playbook names the skill chain, when it applies, and anchors to worked exam
 - `verify-ui` — real-device UI comparison vs Figma
 - `visual-verdict` — structured screenshot comparison verdict
 - `verify-ui-auto` — ImageMagick SSIM / Golden Test automation
-- `webapp-testing` — Playwright-based local webapp testing
 
 </details>
 
@@ -203,9 +202,9 @@ Each playbook names the skill chain, when it applies, and anchors to worked exam
 </details>
 
 <details>
-<summary><b>Brand / style (1)</b></summary>
+<summary><b>Style — Anthropic-specific (1)</b></summary>
 
-- `brand-guidelines` — Anthropic brand colors / typography application
+- `brand-guidelines` — Anthropic brand colors / typography application (**not** Flutter-specific — applies to any Anthropic-branded artifact)
 
 </details>
 
@@ -242,10 +241,11 @@ Each playbook names the skill chain, when it applies, and anchors to worked exam
 </details>
 
 <details>
-<summary><b>Code quality (2)</b></summary>
+<summary><b>Code quality (3)</b></summary>
 
 - `ai-slop-cleaner` — regression-safe AI slop cleanup
 - `codex-cli-rules` — operational rules for driving Codex CLI from scripts (success-check / diff-feed / worktree / stdin)
+- `defense-in-depth` — multi-layer input validation strategy (architecture pattern, not crash debugging)
 
 </details>
 

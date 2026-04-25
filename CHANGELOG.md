@@ -20,11 +20,6 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ### Removed
 - Legacy `superpowers:` namespace prefix stripped from 20 occurrences across 8 skills (`systematic-debugging`, `executing-plans`, `brainstorming`, `testing-skills-with-subagents`, `writing-plans`, `requesting-code-review`, `writing-skills`, `subagent-driven-development`). Bare skill names are the canonical format documented in `writing-skills/SKILL.md`. The `superpowers:` prefix was a legacy from a different skill system and did not resolve in OMC's current loader.
-
-### Notes (history rewrite)
-- Git author email rewritten from a personal hotmail address to GitHub's privacy-safe noreply form (`16792527+ImL1s@users.noreply.github.com`) across all 29 commits using `git filter-repo --email-callback`. All commit SHAs changed; if you had a fork or pinned to a specific SHA, re-pull from `main`. File content is unchanged.
-
-### Removed
 - `skills/kotlin-multiplatform/` — fabricated stub with fake frontmatter schema (`sasmp_version`, `bonded_agent`, etc. — never read by Claude Code harness) and unrelated Python filler in `references/PATTERNS.md` (categorized as "Database"). Use `skills/kmp/` (604-line canonical KMP skill). If you forked and referenced the path, update to `kmp`.
 
 ### Added
@@ -44,6 +39,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 - `skills/_template/SKILL.md` — copy-paste starter for new skills with all required sections pre-populated. Excluded from skill-count via `_*` filter.
 - README badges, table of contents, "Why this repo?" section, collapsible categories, Quick Start.
 - GitHub repo topics: `flutter`, `dart`, `claude-code`, `anthropic`, `skills`, `ai`, `mobile-development`, `agentic`, `llm`, `developer-tools`.
+
+### Notes (history rewrite)
+- Git author email rewritten from a personal hotmail address to GitHub's privacy-safe noreply form (`16792527+ImL1s@users.noreply.github.com`) across all 29 commits using `git filter-repo --email-callback`. All commit SHAs changed; if you had a fork or pinned to a specific SHA, re-pull from `main`. File content is unchanged.
 
 ---
 

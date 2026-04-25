@@ -9,6 +9,7 @@ on:
       - 'CONTRIBUTING.md'
       - 'PLAYBOOKS.md'
       - '.github/scripts/check_skills.py'
+      - '.github/scripts/check_links.py'
       - '.github/workflows/skill-check.yml'
   push:
     branches: [main]
@@ -19,6 +20,7 @@ on:
       - 'CONTRIBUTING.md'
       - 'PLAYBOOKS.md'
       - '.github/scripts/check_skills.py'
+      - '.github/scripts/check_links.py'
       - '.github/workflows/skill-check.yml'
   workflow_dispatch: {}
 
@@ -37,3 +39,6 @@ jobs:
 
       - name: Validate skills
         run: python .github/scripts/check_skills.py
+
+      - name: Check internal links
+        run: python .github/scripts/check_links.py
