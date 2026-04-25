@@ -1,6 +1,6 @@
 # Flutter Claude Skills
 
-[![Skills](https://img.shields.io/badge/skills-66-blue)](./skills)
+[![Skills](https://img.shields.io/badge/skills-67-blue)](./skills)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
 [![Maintained](https://img.shields.io/badge/maintained-yes-brightgreen)](https://github.com/ImL1s/flutter-claude-skills/commits/main)
 [![Claude Code](https://img.shields.io/badge/claude--code-compatible-8A63D2)](https://claude.com/claude-code)
@@ -72,6 +72,9 @@ Pick a row by your task, then follow the "Start with" skill and the linked playb
 | initialize Firebase + monetization in a new app | `flutter-fullstack-init` or `firebase-flutter-setup` | [#8 Firebase + Monetization Init](./PLAYBOOKS.md#playbook-8-firebase--monetization-init) | Firebase / Monetization |
 | port native Android/iOS code to Flutter | `contract-based-porting` | — | Porting / refactoring |
 | clean up AI-generated slop from a branch | `ai-slop-cleaner` | — | Code quality |
+| drive Codex CLI from a script (success-check / diff-feed / worktree) | `codex-cli-rules` | — | Code quality |
+| Figma MCP ran out of View seat quota | `figma-playwright-fallback` | — | Design / UI alignment |
+| accidentally pushed a private email / API key to a public repo | [`finishing-a-development-branch`](./skills/finishing-a-development-branch/SKILL.md#rescue-leaked-secret) | — | Git workflow |
 | something else | Browse [What's inside](#whats-inside) | — | — |
 
 ---
@@ -239,9 +242,10 @@ Each playbook names the skill chain, when it applies, and anchors to worked exam
 </details>
 
 <details>
-<summary><b>Code quality (1)</b></summary>
+<summary><b>Code quality (2)</b></summary>
 
 - `ai-slop-cleaner` — regression-safe AI slop cleanup
+- `codex-cli-rules` — operational rules for driving Codex CLI from scripts (success-check / diff-feed / worktree / stdin)
 
 </details>
 
