@@ -79,5 +79,3 @@ When mismatch diagnosis is hard:
 - **`verify-ui`** — manual screenshot comparison. Use this skill after verify-ui to quantify the diff with image-based metrics.
 - **`figma-implement-design`** → **`figma-use`** — after implementing a Figma design, use verify-ui and visual-verdict to validate the implementation matches the reference.
 - **`verify-ui-auto`** — after visual-verdict confirms the diff is acceptable, set up automated golden tests to prevent regressions.
-
-Task: {{ARGUMENTS}}
