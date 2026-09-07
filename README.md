@@ -330,6 +330,10 @@ Also see:
 
 ---
 
+## Support
+
+If this project saved you some time, you can [buy me a coffee](https://buymeacoffee.com/iml1s).
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
